@@ -1,0 +1,38 @@
+.home {
+  margin-bottom: 40px;
+}
+.home .banner-home {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.home .banner-home img {
+height: 223px;
+width: 1240px;
+left: 100px;
+top: 171px;
+border-radius: 25px;
+
+}
+
+.home .banner-home h1 {
+  position: absolute;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0 0 0 16px;
+}
+
+
+  .home .banner-home img {
+    height: 225px;
+  }
+
+  .home .banner-home h1 {
+    margin: 0;
+  }
