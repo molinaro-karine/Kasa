@@ -2,6 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Home from "./pages/Home"
 
 
@@ -26,6 +27,7 @@ function Layout() {
     <>
     <Header />
     <Home />
+    <Footer />
     </>
   );
 }
