@@ -13,9 +13,9 @@ export default function Dropdown(props) {
   );
 }
 
-export function DropdownLarge(props) {
+export function DropdownContainer(props) {
   return (
-    <details className="dropdown large">
+    <details className="dropdown-container">
       <summary>{props.text}<Arrow /></summary>
       <div>
         {props.children}
