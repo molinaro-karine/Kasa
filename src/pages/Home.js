@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles/Home.css"
+//import Cards from "../components/Cards"
 import banner from "../assets/banner.png"
 
 export default function Home() {

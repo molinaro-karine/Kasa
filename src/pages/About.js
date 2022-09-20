@@ -7,7 +7,7 @@ export default function About() {
   return (
       <main className="about">
         <div className="banner-home">
-          <img src={banner} alt="" draggable="false"/>
+          <img src={banner} alt="" />
         </div>
         <div className="dropdowns">
           <DropdownContainer text="Fiabilité">
@@ -19,7 +19,7 @@ export default function About() {
           <DropdownContainer text="Service">
             Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
           </DropdownContainer>
-          <DropdownContainer text="Sécurité">
+          <DropdownContainer text="Responsabilité">
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
           </DropdownContainer>
         </div>
