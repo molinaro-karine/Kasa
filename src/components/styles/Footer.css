@@ -1,10 +1,12 @@
-footer {
+
+  footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     height: 210px;
     background: #000000;
+    margin-top: 20%;
   }
   
   footer .logo {

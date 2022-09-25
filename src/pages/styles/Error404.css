@@ -1,58 +1,62 @@
-.error{
+
+.errorContainer{
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    color: #FF6060;
+    font-family: 'Montserrat';
     font-style: normal;
-    color: #ff6060;
   }
   
-  .error h1,
-  .error h2 {
-    margin: 0;
-    text-align: center;
-  }
+
   
-  .error h1 {
+  .errorContainer h1 {
     font-weight: 700;
-    font-size: 96px;
-    margin-bottom: 10px;
+    font-size: 288px;
+    margin: 10% 0 0 0;
+  }
+ 
+  .errorContainer h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
   }
   
-  .error h2 {
-    font-weight: inherit;
-    font-size: 18px;
-    margin-bottom: 130px;
-  }
-  
-  .error a {
+  .errorContainer a {
     color: inherit;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 180px;
   }
-  
-  @media (min-width: 1250px) {
-    .error{
+  @media screen and (min-width:1025px) {
+    .errorContainer br { 
+      display:none;
+    }
+  }
+  @media (max-width: 500px) {
+    .errorContainer{
       margin-bottom: 50px;
     }
   
-    .error h1 {
-      font-size: 290px;
-      margin-bottom: 66px;
+    .errorContainer h1 {
+      font-size: 96px;
+      margin: 51% 0 0 0;
     }
   
-    .error h2 {
-      font-size: 36px;
-      margin-bottom: 180px;
-    }
-  
-    .error h2 br {
-      display: none;
-    }
-  
-    .error a {
+    .errorContainer h2 {
       font-size: 18px;
+      margin-bottom: 180px;
+      text-align: center;
+    }
+  
+    .errorContainer a {
+      font-size: 14px;
+      margin:0;
     }
   }
   

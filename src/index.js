@@ -1,34 +1,25 @@
 import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route, Outlet} from "react-router-dom"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route} from "react-router-dom"
+import Location from "./pages/Location"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import "./index.css";
 import Error404 from "./pages/Error404"
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="Location/:id" element={<Location />} />
           <Route path="*" element={<Error404 />} />
-        </Route>
-      </Routes>
+        </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById("root")
+ 
 );
 
-function Layout() {
-  return (
-    <>
-    <Header />
-    <Outlet />
-    <Footer />
-    </>
-  );
-}
+

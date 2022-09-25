@@ -1,13 +1,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 16px;
+  padding: 20px 0 16px;
+}
+header img {
+  height: 47px;
+    width: 145px;
 }
 
-header .logo {
-  width: auto;
-  height: 47px;
-}
 
 header nav {
   font-family: "Montserrat", sans-serif;
@@ -24,7 +24,6 @@ header nav a {
   align-items: center;
   height: 100%;
   color: inherit;
-  text-decoration: inherit;
   margin-left: 10px;
 }
 
@@ -33,14 +32,6 @@ header nav a.active {
 }
 
 @media (min-width: 1250px) {
-  header {
-    padding: 40px 100px 20px;
-  }
-
-  header .logo {
-    height: 68px;
-  }
-
   header nav {
     font-size: 24px;
     text-transform: unset;
