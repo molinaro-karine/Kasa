@@ -1,5 +1,6 @@
 .home {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
+  height: 100vh;
 }
 
 .home .cards {
@@ -44,8 +45,6 @@
 }
 
 @media (max-width: 1290px) {
- 
-
   .home .banner-home {
     justify-content: center;
     font-size: 48px;
@@ -64,10 +63,15 @@
     background-color:#ffffff;
   }
 }
+.cards:after {
+  content: "";
+  margin-right:25%;
+}
 @media (max-width: 500px) {
   .banner-home img {
     height: 225px;
   }
+  
   .home .banner-home h1 {
     font-size: 24px;
     width: 217px;

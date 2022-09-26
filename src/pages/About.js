@@ -1,10 +1,12 @@
 import React from "react"
-//import "./styles/About.css"
+import "./styles/About.css"
 import { DropdownContainer } from "../components/Dropdown"
 import banner from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+
 export default function About() {
+ 
   return (
       <main className="about">
         <Header />
