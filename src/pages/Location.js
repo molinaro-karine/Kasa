@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import locations from "../data/logements.json"
 import Error404 from "./Error404"
+import { ReactComponent as Star } from '../assets/star.svg'
 import "./styles/Location.css"
 
 
@@ -36,7 +37,11 @@ export default function Locations() {
             <span className="name">{location.host.name.split(" ")[0]}<br />{location.host.name.split(" ")[1]}</span>
             <img src={location.host.picture} alt="" />
           </div>
-          
+          <div className="stars">
+            {[1,2,3,4,5].map(star => 
+              <Star key={star} className={ star <= location.rating ? "star" : null }/>
+            )}
+          </div>
         </div>
       </div>
 
