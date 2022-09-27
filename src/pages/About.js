@@ -11,7 +11,7 @@ export default function About() {
       <main className="about">
         <Header />
         <div className="banner-home">
-          <img src={banner} alt="" />
+          <img src={banner} alt="kalen-emsley-Bkci_8qcdvQ-unsplash" />
         </div>
         <div className="dropdowns">
           <DropdownContainer text="Fiabilité">

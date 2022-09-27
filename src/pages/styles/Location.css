@@ -16,13 +16,21 @@
 }
   
 .location h1 {
-    font-size: 18px;
+    font-size: 36px;
     margin-bottom: 5px;
 }
   
 .location h2 {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 10px;
+}
+.location .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
 }
   
 .location .tags {
@@ -33,10 +41,11 @@
   
 .location .review {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
     margin-bottom: 15px;
+    align-content: space-between;
 }
   
 .location .host {
@@ -45,14 +54,14 @@
 }
   
 .location .host .name {
-    font-size: 12px;
+    font-size: 18px;
     text-align: end;
     margin-right: 10px;
 }
   
 .location .host img {
-    height: 32px;
-    width: 32px;
+    height: 64px;
+    width: 64px;
     border-radius: 50%;
 }
   
@@ -83,7 +92,7 @@
     background: #ff6060;
     padding: 0 7px 0 10px;
     list-style: none;
-    font-size: 13px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
 }
@@ -94,7 +103,7 @@
     list-style: none;
 }
 .location .dropdown summary{
-    width: 582px;
+   
     height: 52px;
 }
 .loction summary svg{
@@ -109,18 +118,7 @@
     .location .carousel {
         margin-bottom: 30px;
 }
-    .location summary{
-        width: 335px;
-        height: 52px;
-}
-  
-.location .flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-}
-  
-.location .review {
+    .location .review {
       flex-direction: column;
 }
   
@@ -143,13 +141,43 @@
       width: 64px;
 }
   
-    .location .stars {
+.location .stars {
       gap: 10px;
 }
 }
-@media (max-width: 500px) {
-    .location summary {
-        width: 335px;
-    }
+@media screen and (max-width: 500px) {
+    summary {
+       width: 335px;
+   }
+   .location .review {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
 }
-  
+.location .stars svg{
+    width: 15px;
+    height: 15px;
+}
+.location .host .name {
+    font-size: 12px;
+}
+.location .host {
+    margin-left: 139px;
+}
+.location .host img {
+    height: 32px;
+    width: 32px;
+}
+.location h1 {
+    font-size: 18px;
+}
+.location h2 {
+    font-size: 14px;
+ }
+ .location .dropdown div {
+    padding: 20px;
+    font-size: 18px;
+ }
+}

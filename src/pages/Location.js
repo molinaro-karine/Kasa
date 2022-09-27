@@ -6,8 +6,10 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import locations from "../data/logements.json"
 import Error404 from "./Error404"
+import Tag from "../components/Tag"
 import { ReactComponent as Star } from '../assets/star.svg'
 import "./styles/Location.css"
+
 
 
 export default function Locations() {
@@ -30,6 +32,11 @@ export default function Locations() {
         <div className="text">
           <h1>{location.title}</h1>
           <h2>{location.location}</h2>
+          <div className="tags">
+          {location.tags.map((tag, index) => 
+            <Tag text={tag} key={index} />
+          )}
+          </div>
          </div>
 
          <div className="review">
