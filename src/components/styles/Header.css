@@ -25,11 +25,14 @@ header nav a {
   height: 100%;
   color: inherit;
   margin-left: 10px;
+  text-decoration: none;
 }
 
-header nav a.active {
-  text-decoration: underline;
+a.active {
+  text-decoration: 2px underline;
 }
+
+
 
 @media (min-width: 1250px) {
   header nav {

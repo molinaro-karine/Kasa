@@ -1,32 +1,30 @@
-
-  
   .about .banner-home {
-    height: 110px;
+    height: 223px;
     border-radius: 10px;
     background: #ff6060;
     overflow: hidden;
     margin: 0 0 20px;
   }
 
-  .about .banner-home img {
+ /* .about .banner-home img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     filter: brightness(0.7);
-  }
-  
-  .about .dropdowns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  }*/
+  .dropdown-container > div {
+    font-size: 24px;
+    background: #F7F7F7;
   }
   
   @media (max-width: 1250px) {
     .about .banner-home {
-      height: 111px;
+      height: 223px;
       border-radius: 25px;
       margin: 0 0 35px;
+    }
+    .about .banner-home img {
+      height:225px;
     }
    
     .about .dropdowns {
@@ -35,6 +33,14 @@
       align-items: center;
       gap: 35px;
     }
+  }
+  @media (max-width: 500px) {
+    .about {
+      margin-bottom: 42%;
+    }
+    .dropdown-container > div {
+      font-size: 12px;
+      }
   }
   
  

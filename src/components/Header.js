@@ -10,7 +10,7 @@ export default function Header() {
             <img src={Logo} className="logo" alt="logo"/> 
         </Link>
       <nav>
-        <NavLink to="/">Accueil</NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Accueil</NavLink>
         <NavLink to="/about">À Propos</NavLink>
       </nav>
     </header>
