@@ -33,7 +33,7 @@ export default function Carousel(props) {
   return (
     <div className="carousel">
       {slides}
-      <p className="carrousel-notation">{carousel + 1}/{props.children.length}</p>
+      <p className="carousel-notation">{carousel + 1}/{props.children.length}</p>
     </div>
     );
 }

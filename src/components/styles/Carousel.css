@@ -72,7 +72,7 @@
       width: 80px;
     }
   }
-  .carrousel-notation {
+  .carousel-notation {
     position: absolute;
         font-size: 18px;
         color: #FFF;
@@ -82,7 +82,7 @@
         bottom: 24px;
   }
   @media (max-width: 500px) {
-  p.carrousel-notation {
+  p.carousel-notation {
     display: none;
   }
 }
