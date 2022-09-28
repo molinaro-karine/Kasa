@@ -72,4 +72,17 @@
       width: 80px;
     }
   }
-  
+  .carrousel-notation {
+    position: absolute;
+        font-size: 18px;
+        color: #FFF;
+        left: 50%;
+        right: 50%;
+        margin: auto;
+        bottom: 24px;
+  }
+  @media (max-width: 500px) {
+  p.carrousel-notation {
+    display: none;
+  }
+}

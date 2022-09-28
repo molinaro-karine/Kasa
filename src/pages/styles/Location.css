@@ -27,10 +27,10 @@
 .location .flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 20px 0;
+    align-items: baseline;
 }
   
 .location .tags {
@@ -51,6 +51,8 @@
 .location .host {
     display: flex;
     align-items: center;
+    /*position: absolute;
+    left: 86%;/**/
 }
   
 .location .host .name {
@@ -157,6 +159,9 @@
 .dropdowns details.dropdown {
     width: 100%;
 }
+.location .flex {
+    flex-wrap: nowrap;
+}
 }
 @media screen and (max-width: 500px) {
     .location {
@@ -172,6 +177,9 @@
     margin-bottom: 15px;
     gap: 20px;
 }
+.location .flex {
+    flex-wrap: wrap;
+}
 .location .stars svg{
     width: 15px;
     height: 15px;
@@ -180,7 +188,7 @@
     font-size: 12px;
 }
 .location .host {
-    margin-left: 121px;
+    margin-left: 138px;
 }
 .location .host img {
     height: 32px;
