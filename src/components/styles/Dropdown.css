@@ -10,12 +10,13 @@
   background: #f6f6f6;
 }
 
-.dropdown-container  > div {
+.dropdown-container > div {
   padding: 15px 10px 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
+  line-height: 34px;
 }
 
 .dropdown-container summary svg {
@@ -42,10 +43,11 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 13px;
+  font-size: 24px;
   color: white;
   box-sizing: border-box;
   cursor: pointer;
+  height: 47px;
 }
 
 .dropdown-container[open] summary svg {
@@ -95,13 +97,17 @@
     border-radius: 10px;
   }
 }
-  .dropdownContainer {
-    max-width: 1023px;
-    margin: auto;
+.dropdownContainer {
+  max-width: 1023px;
+  margin: auto;
 }
 
 @media (max-width: 500px) {
   .dropdown-container > div {
-  font-size: 12px;
+    font-size: 12px;
+  }
+  .dropdown-container summary {
+    font-size: 13px;
+    height: 30px;
   }
 }

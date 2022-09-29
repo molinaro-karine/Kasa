@@ -2,19 +2,19 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0 16px;
+  align-items: center;
 }
 header img {
   height: 68px;
   width: 210px;
 }
 
-
 header nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 24px;
   color: #ff6060;
   text-transform: uppercase;
 }
@@ -26,15 +26,14 @@ header nav a {
   color: inherit;
   margin-left: 10px;
   text-decoration: none;
+  padding: 15px;
 }
 
 a.active {
   text-decoration: 2px underline;
 }
 
-
-
-@media (min-width: 1250px) {
+@media (min-width: 992) {
   header nav {
     font-size: 24px;
     text-transform: unset;
@@ -47,7 +46,12 @@ a.active {
 @media (max-width: 500px) {
   header img {
     width: 145px;
-    height:47px;
+    height: 47px;
+  }
+  header nav {
+    font-size: 12px;
+  }
+  header nav a {
+    padding: 0;
   }
 }
-

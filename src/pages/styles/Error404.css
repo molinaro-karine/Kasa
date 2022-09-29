@@ -1,61 +1,59 @@
+.errorContainer {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-style: normal;
+}
 
-.errorContainer{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #FF6060;
-    font-family: 'Montserrat';
-    font-style: normal;
+.errorContainer h1 {
+  font-weight: 700;
+  font-size: 288px;
+  margin: 10% 0 0 0;
+}
+
+.errorContainer h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.errorContainer a {
+  color: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-line: underline;
+  text-align: center;
+  margin: 10%;
+  line-height: 142.6%;
+}
+@media screen and (min-width: 1025px) {
+  .errorContainer br {
+    display: none;
   }
-  
+}
+@media (max-width: 500px) {
+  .errorContainer {
+    margin-bottom: 50px;
+  }
+
   .errorContainer h1 {
-    font-weight: 700;
-    font-size: 288px;
-    margin: 10% 0 0 0;
+    font-size: 96px;
+    margin: 51% 0 0 0;
   }
- 
+
   .errorContainer h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-  }
-  
-  .errorContainer a {
-    color: inherit;
-    font-weight: 500;
     font-size: 18px;
-    text-decoration-line: underline;
+    margin-bottom: 133px;
     text-align: center;
-    margin: 10%;
-    line-height: 142.6%;
   }
-  @media screen and (min-width:1025px) {
-    .errorContainer br { 
-      display:none;
-    }
+
+  .errorContainer a {
+    font-size: 14px;
+    margin: 0;
   }
-  @media (max-width: 500px) {
-    .errorContainer{
-      margin-bottom: 50px;
-    }
-  
-    .errorContainer h1 {
-      font-size: 96px;
-      margin: 51% 0 0 0;
-    }
-  
-    .errorContainer h2 {
-      font-size: 18px;
-      margin-bottom: 180px;
-      text-align: center;
-    }
-  
-    .errorContainer a {
-      font-size: 14px;
-      margin:0;
-    }
-  }
-  
+}
