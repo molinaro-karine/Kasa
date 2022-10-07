@@ -1,18 +1,17 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+//import PropTypes from "prop-types";
 import "./styles/Header.css";
-import Logo from "../assets/logo.svg";
 
-export default function Header() {
+export default function Header(props) {
   return (
-    <header className="Header">
-      <Link to="/">
-        <img src={Logo} className="logo" alt="logo" />
-      </Link>
-      <nav>
-        <NavLink to="/">Accueil</NavLink>
-        <NavLink to="/about">À Propos</NavLink>
-      </nav>
+    <header className="header">
+      <h1 className="header-title">
+        Bonjour
+        <span className="header-title_name">k</span>
+      </h1>
+      <p className="header-text">
+        Félicitation ! Vous avez explosé vos objectifs hier
+      </p>
     </header>
   );
 }

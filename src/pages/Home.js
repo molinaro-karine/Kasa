@@ -1,32 +1,33 @@
-import React from "react";
+/*import React from "react";
 import "./styles/Home.css";
-import Cards from "../components/Cards";
-import banner from "../assets/banner.png";
+
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import locations from "../data/logements.json";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main>
       <Header />
-      <div className="banner-home">
-        <img src={banner} alt="" />
-        <h1>Chez vous, partout et ailleurs</h1>
+      <div className="infos">
+        <div className="infos-graphics">
+          <div className="infos-graphics_barchart">
+            <h2 className="barchart-title">Activité quotidienne</h2>
+            <div className="barchart-legend">
+              <p className="barchart-legend_poids barchart-legendName"></p>
+              <p className="barchart-legend_calories barchart-legendName"></p>
+            </div>
+          </div>
+          <div className="infos-graphics_other">
+            <div className="linechart">
+              <h2 className="linechart-title">Durée moyenne des sessions</h2>
+            </div>
+            <div className="radarchart"></div>
+            <div className="radialchart">
+              <h2 className="radialchart-title">Score</h2>
+            </div>
+          </div>
+        </div>
+        <div className="infos-nutrients"></div>
       </div>
-      <div className="cards">
-        {locations.map((location) => {
-          return (
-            <Cards
-              text={location.title}
-              src={location.cover}
-              id={location.id}
-              key={location.id}
-            />
-          );
-        })}
-      </div>
-      <Footer />
     </main>
   );
-}
+}*/
